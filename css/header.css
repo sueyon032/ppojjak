@@ -16,3 +16,22 @@
     font-size: 20px;
     gap: 16px;
 }
+
+@media screen and (max-width:720px) {
+    .menu {
+        height: 60px;
+    }
+    .menu-list {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .menu {
+        height: 30px;
+    }
+    .menu-list {
+        margin-right: 15px;
+        font-size: 10px;
+    }
+}
