@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
 
 
 </head>
+
 <body>
     <div class="container menu">
         <ul class="menu-list">
@@ -36,6 +38,65 @@
         </select>
     </div>
 
-    
+    <div id="calendar">
+        <div class="title flex-container">
+            <div class="left"><i class="bi bi-caret-left"></i></div>
+            <div class="month"></div>
+            <div class="right"><i class="bi bi-caret-right"></i></div>
+        </div>
+
+        <div class="weekday container">
+            <div class="weekday item">일</div>
+            <div class="weekday item">월</div>
+            <div class="weekday item">화</div>
+            <div class="weekday item">수</div>
+            <div class="weekday item">목</div>
+            <div class="weekday item">금</div>
+            <div class="weekday item">토</div>
+        </div>
+
+        <div class="dates container"></div>
+    </div>
+
+    <div class="scheduleBox">
+        <div class="schedule-bg">
+            <div class="schedules">
+                    <div class="schedule-date">2일</div>
+                    <div class="list-scroll">
+                        <div class="list-bg">
+                            <div class="list">
+                                <i class="bi bi-camera-video"></i>
+                                <div class="list-text">
+                                    <div class="contentTitle container"><할명수출연></div>
+                                    <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-bg">
+                            <div class="list">
+                                <i class="bi bi-camera-video"></i>
+                                <div class="list-text">
+                                    <div class="contentTitle container"><할명수출연></div>
+                                    <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
+                                </div>
+                            </div>
+                        </div> <div class="list-bg">
+                            <div class="list">
+                                <i class="bi bi-camera-video"></i>
+                                <div class="list-text">
+                                    <div class="contentTitle container"><할명수출연></div>
+                                    <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/schedule.js"></script>
 </body>
+
 </html>
