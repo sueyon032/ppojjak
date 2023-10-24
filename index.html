@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPOJJAK</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karma&family=Michroma&display=swap" rel="stylesheet">
+
+    <link href="https://playground.anychart.com/0gKofmsb/iframe" rel="canonical">
+    <meta content="Tag Cloud,Weighted List Chart,Word Cloud,Tooltip" name="keywords">
+    <meta content="AnyChart - JavaScript Charts designed to be embedded and integrated" name="description">
+
 </head>
+
 <body>
-    test
+    <div class="container menu">
+        <ul class="menu-list">
+            <li class="join">join</li>
+            <li class="login">login</li>
+            <li class="search"><i class="bi bi-search"></i></li>
+        </ul>
+    </div>
+
+    <div class="maincontainer">
+        <div class="main-img">
+            <img src="images/mainicon1.png">
+            <img src="images/mainicon2.png">
+            <img src="images/mainicon3.png">
+        </div>
+
+        <div class="main-txt">Who is your bais</div>
+    </div>
+
+    <hr>
+
+    <div id="container"></div>
+
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
+  <script type="text/javascript">anychart.onDocumentReady(function () {
+
+  var data = [
+    {"x": "Mandarin chinese", "value": 1090000000, category: "Sino-Tibetan"},
+    {"x": "English", "value": 983000000, category: "Indo-European"},
+    {"x": "Hindustani", "value": 544000000, category: "Indo-European"},
+    {"x": "Spanish", "value": 527000000, category: "Indo-European"},
+    {"x": "Arabic", "value": 422000000, category: "Afro-Asiatic"},
+    {"x": "Malay", "value": 281000000, category: "Austronesian"},
+    {"x": "Russian", "value": 267000000, category: "Indo-European"},
+    {"x": "Bengali", "value": 261000000, category: "Indo-European"},
+    {"x": "Portuguese", "value": 229000000, category: "Indo-European"},
+    {"x": "French", "value": 229000000, category: "Indo-European"},
+    {"x": "Hausa", "value": 150000000, category: "Afro-Asiatic"},
+    {"x": "Punjabi", "value": 148000000, category: "Indo-European"},
+    {"x": "Japanese", "value": 129000000, category: "Japonic"},
+    {"x": "German", "value": 129000000, category: "Indo-European"},
+    {"x": "Persian", "value": 121000000, category: "Indo-European"}
+  ];
+
+  // create a tag cloud chart
+  var chart = anychart.tagCloud(data);
+
+  // set the chart title
+  chart.title('15 most spoken languages')
+  // set array of angles, by which words will be placed
+  chart.angles([0])
+  // enable color range
+  chart.colorRange(true);
+  // set color range length
+  chart.colorRange().length('80%');
+
+  // display chart
+  chart.container("container");
+  chart.draw();
+});</script>
+    
 </body>
+
 </html>
