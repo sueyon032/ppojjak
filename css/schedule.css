@@ -1,8 +1,8 @@
-body{
+body {
     background-color: #FFCD4B;
 }
 
-.title{
+.title {
     display: flex;
     color: white;
     font-size: 25px;
@@ -11,6 +11,26 @@ body{
     margin-top: 20px;
 }
 
-.title-text{
+.title-text {
     font-weight: bold;
+}
+
+.sel{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.idolSel {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.idolSel option{
+    color: black;
 }
