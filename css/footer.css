@@ -5,12 +5,13 @@ footer{
     bottom: 0;
 }
 
-.footer{
+.footer-group{
     font-size: 20px;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 60px;
 
 }
 .footer-google-emil,
@@ -22,4 +23,16 @@ footer{
 }
 .bi{
     font-size: 24px;
+}
+@media screen and (max-width:720px){
+    .footer-group{
+        font-size: 15px;
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:540px) {
+    .footer-group{
+        font-size: 15px;
+        margin-left: 20px;
+    }
 }
