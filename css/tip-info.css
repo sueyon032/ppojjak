@@ -1,0 +1,36 @@
+:root {
+    --main-color: #FFCD4B;
+    --serve-color: #FF4B91;
+}
+.tip-info {
+    background-color: var(--main-color);
+}
+.title {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    gap: 10px;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.title-text {
+    font-weight: bold;
+}
+
+.tip-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 90px;
+}
+.content-container {
+    margin-left: 120px;
+}
+.content-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.content {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
