@@ -14,7 +14,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karma&family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karma&family=Michroma&display=swap"
+        rel="stylesheet">
 
     <link href="https://playground.anychart.com/0gKofmsb/iframe" rel="canonical">
     <meta content="Tag Cloud,Weighted List Chart,Word Cloud,Tooltip" name="keywords">
@@ -23,13 +24,15 @@
 </head>
 
 <body>
-    <div class="container menu">
-        <ul class="menu-list">
-            <li class="join">join</li>
-            <li class="login">login</li>
-            <li class="search"><i class="bi bi-search"></i></li>
-        </ul>
-    </div>
+    <header>
+        <div class="header">
+            <ul class="header-list">
+                <li class="join">join</li>
+                <li class="login">login</li>
+                <li class="search"><i class="bi bi-search"></i></li>
+            </ul>
+        </div>
+    </header>
 
     <div class="maincontainer">
         <div class="main-img">
@@ -43,47 +46,39 @@
 
     <hr>
 
-    <div id="container"></div>
+    <div class="secondContainer">
+        <div class="wordCloud">
+            <ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+                <li><a href="#" data-weight="4">비공굿</a><br><br></li>
+                <li><a href="#" data-weight="3">공굿</a><br></li>
+                <li><a href="#" data-weight="5">생카</a><br><br></li>
+                <li><a href="#" data-weight="8">포카</a><br></li>
+                <li><a href="#" data-weight="6">팬싸컷</a><br></li>
+                <li><a href="#" data-weight="4">플미</a></li>
+                <li><a href="#" data-weight="5">슴리</a><br><br></li>
+                <li><a href="#" data-weight="6">컨포</a><br><br></li>
+                <li><a href="#" data-weight="4">하라메</a></li>
+                <li><a href="#" data-weight="9">스밍</a><br><br><br></li>
+                <li><a href="#" data-weight="3">MD</a></li>
+                <li><a href="#" data-weight="7">입덕</a><br></li>
+                <li><a href="#" data-weight="8">인라</a><br><br></li>
+                <li><a href="#" data-weight="3">럭드</a></li>
+            </ul>
+        </div>
 
-    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-  <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
-  <script type="text/javascript">anychart.onDocumentReady(function () {
+        <div class="wordText">
+            <div class="wordTextCustom1">덕질.. 너무 어려워요ㅠ</div>
+            <div class="wordTextCustom2">쉽게 알려주세요!!</div>
+        </div>
 
-  var data = [
-    {"x": "Mandarin chinese", "value": 1090000000, category: "Sino-Tibetan"},
-    {"x": "English", "value": 983000000, category: "Indo-European"},
-    {"x": "Hindustani", "value": 544000000, category: "Indo-European"},
-    {"x": "Spanish", "value": 527000000, category: "Indo-European"},
-    {"x": "Arabic", "value": 422000000, category: "Afro-Asiatic"},
-    {"x": "Malay", "value": 281000000, category: "Austronesian"},
-    {"x": "Russian", "value": 267000000, category: "Indo-European"},
-    {"x": "Bengali", "value": 261000000, category: "Indo-European"},
-    {"x": "Portuguese", "value": 229000000, category: "Indo-European"},
-    {"x": "French", "value": 229000000, category: "Indo-European"},
-    {"x": "Hausa", "value": 150000000, category: "Afro-Asiatic"},
-    {"x": "Punjabi", "value": 148000000, category: "Indo-European"},
-    {"x": "Japanese", "value": 129000000, category: "Japonic"},
-    {"x": "German", "value": 129000000, category: "Indo-European"},
-    {"x": "Persian", "value": 121000000, category: "Indo-European"}
-  ];
+        <div class="wordText2">뽀짝에서는 쉽게 덕질을 할 수 있어요!</div>
+    </div>
 
-  // create a tag cloud chart
-  var chart = anychart.tagCloud(data);
+    <hr>
 
-  // set the chart title
-  chart.title('15 most spoken languages')
-  // set array of angles, by which words will be placed
-  chart.angles([0])
-  // enable color range
-  chart.colorRange(true);
-  // set color range length
-  chart.colorRange().length('80%');
+    <br><br><br><br><br><br><br><br><br><br>
 
-  // display chart
-  chart.container("container");
-  chart.draw();
-});</script>
-    
+
 </body>
 
 </html>
