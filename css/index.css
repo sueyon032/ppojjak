@@ -1,101 +1,122 @@
-body{
-    background-color: #FFCD4B;
+body {
+  background-color: #FFCD4B;
 }
 
 .maincontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    height: 90vh; /* 화면 높이와 동일하게 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  /* 화면 높이와 동일하게 설정 */
 }
 
 .main-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
 .main-img img {
-    width: 270px;
-    height: 270px;
+  width: 270px;
+  height: 270px;
 }
 
 .main-txt {
-    display: flex;
-    justify-content: center;
-    font-size: 70px;
-    font-family: 'Karma', serif;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-family: 'Karma', serif;
+  margin-top: 20px;
 }
 
-hr{
-    border: 1px solid black;
+hr {
+  border: 1px solid black;
 }
 
-.wordCloud{
+.wordCloud {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
 }
 
-  ul.cloud {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    line-height: 2.75rem;
-    width: 800px;
-    height: 200px;
-  }
-  
-  ul.cloud a {
-    --size: 4;
-    --color: #ffffff;
-    color: var(--color);
-    font-size: calc(var(--size) * 0.25rem + 0.5rem);
-    display: block;
-    padding: 1rem 0.9rem;
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
-  }
+ul.cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.75rem;
+  width: 800px;
+  height: 200px;
+}
 
-  ul.cloud a[data-weight="3"] { --size: 3; }
-  ul.cloud a[data-weight="4"] { --size: 4; }
-  ul.cloud a[data-weight="5"] { --size: 6; }
-  ul.cloud a[data-weight="6"] { --size: 8; }
-  ul.cloud a[data-weight="7"] { --size: 10; }
-  ul.cloud a[data-weight="8"] { --size: 13; }
-  ul.cloud a[data-weight="9"] { --size: 16; }
+ul.cloud a {
+  --size: 4;
+  --color: #ffffff;
+  color: var(--color);
+  font-size: calc(var(--size) * 0.25rem + 0.5rem);
+  display: block;
+  padding: 1rem 0.9rem;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  ul.cloud a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height: 100%;
-    background: var(--color);
-    transform: translate(-50%, 0);
-    opacity: 0.15;
-    transition: width 0.25s;
-  }
-  
-  ul.cloud a:focus::before,
-  ul.cloud a:hover::before {
-    width: 100%;
-  }
+ul.cloud a[data-weight="3"] {
+  --size: 3;
+}
+
+ul.cloud a[data-weight="4"] {
+  --size: 4;
+}
+
+ul.cloud a[data-weight="5"] {
+  --size: 6;
+}
+
+ul.cloud a[data-weight="6"] {
+  --size: 8;
+}
+
+ul.cloud a[data-weight="7"] {
+  --size: 10;
+}
+
+ul.cloud a[data-weight="8"] {
+  --size: 13;
+}
+
+ul.cloud a[data-weight="9"] {
+  --size: 16;
+}
+
+ul.cloud a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: var(--color);
+  transform: translate(-50%, 0);
+  opacity: 0.15;
+  transition: width 0.25s;
+}
+
+ul.cloud a:focus::before,
+ul.cloud a:hover::before {
+  width: 100%;
+}
 
 
-  .secondContainer{
-    display: flex;
-    flex-direction: column;
-  }
-  
-.wordText{
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.wordText {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -103,26 +124,77 @@ hr{
   gap: 300px;
 }
 
-  .wordTextCustom1,
-  .wordTextCustom2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 300px;
-    height: 50px;
-    border-radius: 100px;
-  }
+.wordTextCustom1,
+.wordTextCustom2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  border-radius: 100px;
+  font-size: 20px;
+}
 
-  .wordTextCustom2{
-    margin-top: 60px;
-  }
+.wordTextCustom2 {
+  margin-top: 60px;
+}
 
-  .wordText2{
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 80px;
-    margin-bottom: 50px;
-  }
+.wordText2 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.thirdContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  margin-bottom: 85px;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  background-color: white;
+  width: 1300px;
+  height: 550px;
+  border-radius: 50px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #FFCD4B;
+  width: 380px;
+  height: 400px;
+  border-radius: 50px;
+  color: white;
+}
+
+.box-text1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.box-text2 {
+  font-size: 25px;
+}
+
+@media screen and (max-width:720px){
+  
+}
+
+@media screen and (max-width:540px){
+  
+}
