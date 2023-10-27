@@ -1,0 +1,97 @@
+:root {
+    --main-color: #FFCD4B;
+    --serve-color: #FF4B91;
+}
+
+.tip {
+    background-color: var(--main-color);
+}
+.title {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    gap: 10px;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.title-text {
+    font-weight: bold;
+}
+
+.tip-container {
+    display: flex;  
+    column-gap: 100px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(280px * 3 + 100px * 2);
+}
+.tip-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tip-circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 140px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.tip-circle, .tip-title {
+    transition: all 0.2s;
+}
+.tip-title {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    background-color: #fff;
+}
+
+@media screen and (max-width:720px) {
+    .title {
+        font-size: 25px;
+        margin-left: 40px;
+    }
+    .tip-container {
+        column-gap: 30px;
+    }
+    .tip-circle {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+    .tip-title {
+        width: 160px;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .title {
+        font-size: 20px;
+        gap: 5px;
+        margin-left: 20px;
+    }
+    .tip-circle {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 5px;
+    }
+    .tip-title {
+        width: 100px;
+        height: 25px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+}
