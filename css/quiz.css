@@ -1,0 +1,34 @@
+body{
+    background-color: #FFCD4B;
+    color: white;
+}
+.title-quiz{
+    margin-top: 120px;
+    margin-left: 87px;
+    display: flex;
+    flex-direction: row;
+}
+.quiz{
+    font-size: 40px;
+}
+.bi{
+    font-size: 30px;
+}
+.quiz-text{
+    margin-top: 50px;
+    margin-left: 164px;
+    display: flex;
+    flex-direction: row;
+}
+.quiz-text-question{
+    font-size: 80px;
+}
+.quiz-highlight{
+    color: #FF4B91;
+}
+.answer{
+    background-color: white;
+}
+.answer-1{
+    color: #FF4B91;
+}
