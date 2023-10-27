@@ -4,6 +4,7 @@
 }
 .tip-info {
     background-color: var(--main-color);
+    padding-bottom: 20px;
 }
 .title {
     display: flex;
