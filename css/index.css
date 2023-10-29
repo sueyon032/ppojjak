@@ -51,7 +51,7 @@ ul.cloud {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  line-height: 2.75rem;
+  line-height: 2.5rem;
   width: 800px;
   height: 200px;
 }
@@ -63,8 +63,6 @@ ul.cloud a {
   font-size: calc(var(--size) * 0.25rem + 0.5rem);
   display: block;
   padding: 1rem 0.9rem;
-  position: relative;
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -96,31 +94,12 @@ ul.cloud a[data-weight="9"] {
   --size: 16;
 }
 
-/* ul.cloud a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 100%;
-  background: var(--color);
-  transform: translate(-50%, 0);
-  opacity: 0.15;
-  transition: width 0.25s;
-} */
-
-/* ul.cloud a:focus::before,
-ul.cloud a:hover::before {
-  width: 100%;
-} */
-
-
 .wordText {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin-top: 150px;
-  gap: 300px;
+  gap: 15vw;
 }
 
 .wordTextCustom1,
@@ -129,10 +108,10 @@ ul.cloud a:hover::before {
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 300px;
+  width: 28vw;
   height: 60px;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .wordTextCustom2 {
@@ -181,9 +160,9 @@ ul.cloud a:hover::before {
 }
 
 .box-text1 {
-  font-size: 2.6rem; 
+  font-size: 2.8rem; 
   font-weight: bold;
-  margin-bottom: 2rem; 
+  margin-bottom: 4rem; 
 }
 
 .box-text2 {
