@@ -8,7 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  /* 화면 높이와 동일하게 설정 */
 }
 
 .main-img {
@@ -19,8 +18,8 @@ body {
 }
 
 .main-img img {
-  width: 270px;
-  height: 270px;
+  width: 20vw;
+  height: 40vh;
 }
 
 .main-txt {
@@ -92,7 +91,7 @@ ul.cloud a[data-weight="9"] {
   --size: 16;
 }
 
-ul.cloud a::before {
+/* ul.cloud a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -103,12 +102,12 @@ ul.cloud a::before {
   transform: translate(-50%, 0);
   opacity: 0.15;
   transition: width 0.25s;
-}
+} */
 
-ul.cloud a:focus::before,
+/* ul.cloud a:focus::before,
 ul.cloud a:hover::before {
   width: 100%;
-}
+} */
 
 
 .secondContainer {
@@ -191,10 +190,86 @@ ul.cloud a:hover::before {
   font-size: 25px;
 }
 
-@media screen and (max-width:720px){
-  
+@media screen and (max-width:720px) {
+  .main-img {
+    width: 150px;
+    gap: 30px;
+  }
+
+  .main-txt {
+    font-size: 30px;
+    margin-top: 15px;
+  }
 }
 
-@media screen and (max-width:540px){
+@media screen and (max-width:540px) {
+  .maincontainer {
+    height: 95vh;
+  }
+
+  .main-img {
+    gap: 50px;
+  }
   
+  .main-img img {
+    width: 20vw;
+    height: 20vh;
+  }
+
+  .main-txt {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .wordCloud{
+    display: none;
+  }
+
+  .wordText {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 10px;
+  }
+  
+  .wordTextCustom1,
+  .wordTextCustom2 {
+    width: 350px;
+    height: 70px;
+  }
+  
+  .wordText2 {
+    font-size: 25px;
+    margin-top: 130px;
+    margin-bottom: 160px;
+  }
+  
+
+  .thirdContainer {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  
+  .boxes {
+    flex-direction: column;
+    gap: 30px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50px;
+  }
+  
+  .box {
+    width: 400px;
+    height: 100px;
+    border-radius: 30px;
+  }
+  
+  .box-text1 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  
+  .box-text2 {
+    display: none;
+  }
 }
