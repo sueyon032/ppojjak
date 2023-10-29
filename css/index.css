@@ -162,7 +162,7 @@ ul.cloud a:hover::before {
   justify-content: center;
   gap: 35px;
   background-color: white;
-  width: 1300px;
+  width: 90vw;
   height: 550px;
   border-radius: 50px;
 }
@@ -174,20 +174,20 @@ ul.cloud a:hover::before {
   text-align: center;
   flex-direction: column;
   background-color: #FFCD4B;
-  width: 380px;
+  width: 25vw;
   height: 400px;
   border-radius: 50px;
   color: white;
 }
 
 .box-text1 {
-  font-size: 50px;
+  font-size: 2.6rem; 
   font-weight: bold;
-  margin-bottom: 70px;
+  margin-bottom: 2rem; 
 }
 
 .box-text2 {
-  font-size: 25px;
+  font-size: 1.3rem; 
 }
 
 @media screen and (max-width:720px) {
@@ -280,16 +280,6 @@ ul.cloud a:hover::before {
     height: 55px;
     font-size: 16px;
   }
-
-
-  
-  /* .thirdContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 85px;
-    margin-bottom: 85px;
-  } */
   
   .boxes {
     gap: 10px;
