@@ -34,6 +34,11 @@ hr {
   border: 1px solid black;
 }
 
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .wordCloud {
   display: flex;
   align-items: center;
@@ -109,11 +114,6 @@ ul.cloud a:hover::before {
   width: 100%;
 } */
 
-
-.secondContainer {
-  display: flex;
-  flex-direction: column;
-}
 
 .wordText {
   display: flex;
@@ -192,14 +192,128 @@ ul.cloud a:hover::before {
 
 @media screen and (max-width:720px) {
   .main-img {
-    width: 150px;
-    gap: 30px;
+    gap: 50px;
+  }
+
+  .main-img img {
+    width: 20vw;
+    height: 20vh;
   }
 
   .main-txt {
-    font-size: 30px;
-    margin-top: 15px;
+    font-size: 40px;
   }
+
+  .secondContainer {
+    flex-direction: column;
+  }
+
+  .wordContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  .wordCloud {
+    margin-top: 0;
+  }
+
+  .wordText {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  ul.cloud {
+    line-height: 1rem;
+    width: 300px;
+    height: 180px
+  }
+
+  ul.cloud a {
+    padding: 0.5rem 0.4rem;
+  }
+
+  ul.cloud a[data-weight="3"] {
+    --size: 2;
+  }
+
+  ul.cloud a[data-weight="4"] {
+    --size: 3;
+  }
+
+  ul.cloud a[data-weight="5"] {
+    --size: 4;
+  }
+
+  ul.cloud a[data-weight="6"] {
+    --size: 5;
+  }
+
+  ul.cloud a[data-weight="7"] {
+    --size: 6;
+  }
+
+  ul.cloud a[data-weight="8"] {
+    --size: 7;
+  }
+
+  ul.cloud a[data-weight="9"] {
+    --size: 8;
+  }
+
+  .wordText2 {
+    font-size: 25px;
+  }
+
+  #text1,
+  #text2,
+  #text3 {
+    display: none;
+  }
+
+  .wordTextCustom1,
+  .wordTextCustom2 {
+    width: 250px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+
+  
+  /* .thirdContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    margin-bottom: 85px;
+  } */
+  
+  .boxes {
+    gap: 10px;
+    width: 90vw;
+    height: 300px;
+    border-radius: 30px;
+  }
+  
+  .box {
+    width: 28vw;
+    height: 200px;
+    border-radius: 30px;
+  }
+  
+  .box-text1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .box-text2 {
+    font-size: 15px;
+  }
+
 }
 
 @media screen and (max-width:540px) {
@@ -208,12 +322,12 @@ ul.cloud a:hover::before {
   }
 
   .main-img {
-    gap: 50px;
+    gap: 40px;
   }
-  
+
   .main-img img {
     width: 20vw;
-    height: 20vh;
+    height: 15vh;
   }
 
   .main-txt {
@@ -221,7 +335,11 @@ ul.cloud a:hover::before {
     margin-top: 20px;
   }
 
-  .wordCloud{
+  .secondContainer {
+    flex-direction: column;
+  }
+
+  .wordCloud {
     display: none;
   }
 
@@ -231,25 +349,25 @@ ul.cloud a:hover::before {
     margin-top: 150px;
     gap: 10px;
   }
-  
+
   .wordTextCustom1,
   .wordTextCustom2 {
     width: 350px;
     height: 70px;
   }
-  
+
   .wordText2 {
     font-size: 25px;
     margin-top: 130px;
     margin-bottom: 160px;
   }
-  
+
 
   .thirdContainer {
     margin-top: 120px;
     margin-bottom: 120px;
   }
-  
+
   .boxes {
     flex-direction: column;
     gap: 30px;
@@ -257,18 +375,18 @@ ul.cloud a:hover::before {
     height: 450px;
     border-radius: 50px;
   }
-  
+
   .box {
     width: 400px;
     height: 100px;
     border-radius: 30px;
   }
-  
+
   .box-text1 {
     font-size: 60px;
     margin-bottom: 0;
   }
-  
+
   .box-text2 {
     display: none;
   }
