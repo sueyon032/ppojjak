@@ -3,6 +3,7 @@ footer{
     width: 100%;
     background-color: #FFCD4B;
     bottom: 0;
+    padding-top: 50px;
 }
 
 .footer-group{
@@ -12,6 +13,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     margin-left: 60px;
+    padding-top: 43px;
 
 }
 .footer-google-emil,
