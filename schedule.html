@@ -10,12 +10,24 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/menu.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 </head>
 
 <body>
+    <menu class="menu">
+        <div class="menu-container">
+            <div class="logo">PPOJJAK</div>
+            <ul class="menu-list">
+                <a href="tip.html"><li class="list-item"><i class="bi bi-lightbulb"></i> tip</li></a>
+                <a href="schedule.html"><li class="list-item"><i class="bi bi-calendar-check"></i> schedule</li></a>
+                <a href="quiz.html"><li class="list-item"><i class="bi bi-patch-question-fill"></i> quiz</li></a>
+            </ul>
+        </div>
+    </menu>
+
     <header>
         <div class="header">
             <ul class="header-list">
@@ -40,60 +52,62 @@
         </select>
     </div>
 
-    <div id="calendar">
-        <div class="title flex-container">
-            <div class="left"><i class="bi bi-caret-left"></i></div>
-            <div class="month"></div>
-            <div class="right"><i class="bi bi-caret-right"></i></div>
+    <div class="all-container">
+        <div id="calendar">
+            <div class="title flex-container">
+                <div class="left"><i class="bi bi-caret-left"></i></div>
+                <div class="month"></div>
+                <div class="right"><i class="bi bi-caret-right"></i></div>
+            </div>
+
+            <div class="weekday container">
+                <div class="weekday item">일</div>
+                <div class="weekday item">월</div>
+                <div class="weekday item">화</div>
+                <div class="weekday item">수</div>
+                <div class="weekday item">목</div>
+                <div class="weekday item">금</div>
+                <div class="weekday item">토</div>
+            </div>
+
+            <div class="dates container"></div>
         </div>
 
-        <div class="weekday container">
-            <div class="weekday item">일</div>
-            <div class="weekday item">월</div>
-            <div class="weekday item">화</div>
-            <div class="weekday item">수</div>
-            <div class="weekday item">목</div>
-            <div class="weekday item">금</div>
-            <div class="weekday item">토</div>
-        </div>
-
-        <div class="dates container"></div>
-    </div>
-
-    <div class="scheduleBox">
-        <div class="schedule-bg">
-            <div class="schedules">
-                    <div class="schedule-date">2일</div>
-                    <div class="list-scroll">
-                        <div class="list-bg">
-                            <div class="list">
-                                <i class="bi bi-camera-video"></i>
-                                <div class="list-text">
-                                    <div class="contentTitle container"><할명수출연></div>
-                                    <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
+        <div class="scheduleBox">
+            <div class="schedule-bg">
+                <div class="schedules">
+                        <div class="schedule-date">2일</div>
+                        <div class="list-scroll">
+                            <div class="list-bg">
+                                <div class="list">
+                                    <i class="bi bi-camera-video"></i>
+                                    <div class="list-text">
+                                        <div class="contentTitle container"><할명수출연></div>
+                                        <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-bg">
+                                <div class="list">
+                                    <i class="bi bi-camera-video"></i>
+                                    <div class="list-text">
+                                        <div class="contentTitle container"><할명수출연></div>
+                                        <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="list-bg">
+                                <div class="list">
+                                    <i class="bi bi-camera-video"></i>
+                                    <div class="list-text">
+                                        <div class="contentTitle container"><할명수출연></div>
+                                        <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="list-bg">
-                            <div class="list">
-                                <i class="bi bi-camera-video"></i>
-                                <div class="list-text">
-                                    <div class="contentTitle container"><할명수출연></div>
-                                    <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="list-bg">
-                            <div class="list">
-                                <i class="bi bi-camera-video"></i>
-                                <div class="list-text">
-                                    <div class="contentTitle container"><할명수출연></div>
-                                    <div class="detail container">오후 5시30분 | 할명수 유튜브</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                        
+                </div>
             </div>
         </div>
     </div>
@@ -117,8 +131,9 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/schedule.js"></script>
+    <script src="js/schedule.js"></script>  
+    <script src="js/menu.js"></script>  
+    
 </body>
 
 </html>

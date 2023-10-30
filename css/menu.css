@@ -34,3 +34,9 @@ html, body {
 .list-item {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width:720px) {
+    .menu{
+        visibility: hidden;
+    }
+}

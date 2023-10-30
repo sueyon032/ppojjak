@@ -52,3 +52,5 @@ rightDiv.onclick = () => {
 
 var titleSchedule = document.getElementsByClassName("schedule-date")[0];
 titleSchedule.innerHTML = `${day}일`;
+
+
