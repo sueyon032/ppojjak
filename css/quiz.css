@@ -3,8 +3,10 @@ body{
     color: white;
 }
 .title-quiz{
-    margin-top: 120px;
-    margin-left: 87px;
+    font-size: 25px;
+    gap: 5px;
+    margin-left: 70px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -15,10 +17,8 @@ body{
     font-size: 30px;
 }
 .quiz-text{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 164px;
-    display: flex;
-    flex-direction: row;
 }
 .quiz-text-question{
     font-size: 80px;
@@ -26,9 +26,117 @@ body{
 .quiz-highlight{
     color: #FF4B91;
 }
-.answer{
-    background-color: white;
+.answer {
+    display: flex;
+    flex-direction: row;
+    gap: 200px; /* 가로 간격을 200px로 설정 */
+    margin-top: 40px;
+    justify-content: center;
 }
-.answer-1{
+
+.answer-1 {
     color: #FF4B91;
+    background-color: white;
+    width: 455px;
+    height: 455px;
+    border-radius: 40px;
 }
+
+.answer-2 {
+    color: #0802A3;
+    background-color: white;
+    width: 455px;
+    height: 455px;
+    border-radius: 40px;
+}
+.answer-1,
+.answer-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-1 > i {
+    font-size: 234px;
+}
+
+.answer-2 > i {
+    font-size: 290px;
+}
+
+/* 태블릿 */
+@media screen and (max-width:720px){
+    .title-quiz{
+        margin-left: 35px;
+    }
+    .quiz-text{
+        margin-left: 50px;
+    }
+    .quiz-text-question{
+        font-size: 45px;
+    }
+    .answer {
+        flex-direction: column;
+        gap: 54px;
+        margin-top: 43px;
+        align-items: center;
+    }
+    
+    .answer-1 {
+        width: 500px;
+        height: 254px;
+    }
+    
+    .answer-2 {
+        width: 500px;
+        height: 254px;
+    }
+    .answer-1 > i {
+        font-size: 150px;
+    }
+    
+    .answer-2 > i {
+        font-size: 180px;
+    }
+
+}
+
+/* 모바일 */
+@media screen and (max-width:540px) {
+    .title-quiz{
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .quiz{
+        font-size: 20px;
+    }
+    .quiz-text{
+        margin-left: 55px;
+    }
+    .quiz-text-question{
+        font-size: 30px;
+    }
+    .answer {
+        gap: 31px;
+        margin-top: 42px;
+        align-items: center;
+    }
+    
+    .answer-1 {
+        width: 333px;
+        height: 232px;
+    }
+    
+    .answer-2 {
+        width: 333px;
+        height: 232px;
+    }
+    .answer-1 > i {
+        font-size: 130px;
+    }
+    
+    .answer-2 > i {
+        font-size: 160px;
+    }
+}
+
