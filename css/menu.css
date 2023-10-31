@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
 :root {
     --main-color: #FFCD4B;
     --serve-color: #FF4B91;
@@ -35,8 +37,40 @@ html, body {
     margin-bottom: 20px;
 }
 
+.nav{
+    display: none;
+}
+
 @media screen and (max-width:720px) {
     .menu{
         visibility: hidden;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        height: 60px;
+    }
+    
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: 130px;
+    }
+    
+    .nav-item{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:540px) {
+    .nav-list {
+        gap: 180px;
     }
 }
