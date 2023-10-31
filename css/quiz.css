@@ -16,7 +16,7 @@ body{
 .quiz{
     font-size: 40px;
 }
-.bi{
+.answer>.bi{
     font-size: 30px;
 }
 .quiz-text{
