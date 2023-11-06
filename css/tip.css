@@ -2,7 +2,9 @@
     --main-color: #FFCD4B;
     --serve-color: #FF4B91;
 }
-
+body {
+    background-color: #FFCD4B;
+}
 .tip {
     background-color: var(--main-color);
 }
@@ -39,6 +41,14 @@
     border-radius: 140px;
     margin-bottom: 20px;
     background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tip-circle img {
+    max-width: 70%; /* 이미지가 div의 크기에 맞게 조정되도록 합니다. */
+    object-fit: cover; /* 이미지가 div에 가득 차도록 합니다. */
 }
 .tip-circle, .tip-title {
     transition: all 0.2s;
