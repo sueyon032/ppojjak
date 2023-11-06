@@ -143,3 +143,9 @@ body{
     }
 }
 
+/* 삭제 예정 */
+#next-button {
+    position: absolute;
+    top: 20px; /* 위 여백 조절 가능 */
+    right: 20px; /* 오른쪽 여백 조절 가능 */
+}

@@ -1,46 +1,53 @@
 document.addEventListener('DOMContentLoaded', function () {
     const quizText = document.querySelector('.quiz-text-question');
-    const oxButtons = document.querySelectorAll('.ox-button');
-    let quizData; // JSON 데이터를 저장할 변수
-
-    // JSON 파일을 가져오는 함수
-    function fetchQuizData() {
-        fetch('quiz_data.json')
-            .then(response => response.json())
-            .then(data => {
-                quizData = data;
-                displayQuiz(0); // 초기 퀴즈 표시
-            })
-            .catch(error => console.error('Error fetching quiz data: ', error));
-    }
+    const answer1 = document.querySelector('.answer-1'); // answer-1 요소
+    const answer2 = document.querySelector('.answer-2'); // answer-2 요소
+    let quizData; // quiz_data를 저장할 변수
+    let currentIndex = 0; // 현재 퀴즈 인덱스
+    let answered = false; // 사용자가 이미 선택을 했는지 여부를 나타내는 변수
 
     function displayQuiz(index) {
         const currentQuiz = quizData[index];
-        quizText.innerHTML = currentQuiz.quiz_text;
+        quizText.textContent = currentQuiz.quiz_text;
 
-        // 색상 초기화
-        oxButtons.forEach(button => {
-            button.style.backgroundColor = 'lightgray';
+        answer1.addEventListener('click', () => {
+            if (!answered) { // 사용자가 아직 선택하지 않은 경우에만 실행
+                answered = true;
+                if (currentQuiz.answer === 'O') {
+                    answer1.style.backgroundColor = '#C3E6FF'; // 정답인 경우 answer-1의 배경색을 #C3E6FF로 변경
+                } else {
+                    answer1.style.backgroundColor = '#FF7676'; // 오답인 경우 answer-1의 배경색을 #FF7676로 변경
+                }
+            }
         });
 
-        oxButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const userAnswer = button.getAttribute('data-answer');
-                if (userAnswer === currentQuiz.answer) {
-                    button.style.backgroundColor = 'green'; // 정답인 경우 녹색 배경색
+        answer2.addEventListener('click', () => {
+            if (!answered) { // 사용자가 아직 선택하지 않은 경우에만 실행
+                answered = true;
+                if (currentQuiz.answer === 'X') {
+                    answer2.style.backgroundColor = '#C3E6FF'; // 정답인 경우 answer-2의 배경색을 #C3E6FF로 변경
                 } else {
-                    button.style.backgroundColor = 'red'; // 오답인 경우 빨간 배경색
+                    answer2.style.backgroundColor = '#FF7676'; // 오답인 경우 answer-2의 배경색을 #FF7676로 변경
                 }
-            });
+            }
         });
     }
 
-    fetchQuizData(); // 데이터 가져오기
+    // quiz_data를 HTML에서 가져오기
+    quizData = quiz_data;
+
+    // 초기 퀴즈 표시
+    displayQuiz(currentIndex);
 
     document.querySelector('#next-button').addEventListener('click', () => {
-        // 다음 퀴즈 표시 (현재는 다음 퀴즈로 이동만 가능)
-        if (quizData && quizData.length > 1) {
-            displayQuiz(1);
+        // 다음 버튼을 눌렀을 때 answer-1과 answer-2의 배경색 초기화 및 상태 초기화
+        answer1.style.backgroundColor = 'white';
+        answer2.style.backgroundColor = 'white';
+        answered = false;
+
+        currentIndex++;
+        if (quizData && currentIndex < quizData.length) {
+            displayQuiz(currentIndex);
         }
     });
 });
