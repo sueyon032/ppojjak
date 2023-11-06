@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function createOxButton(text) {
         // 새로운 h1 태그 생성
         const newOxButton = document.createElement('h1');
-        newOxButton.textContent = text; // h1 태그에 내용 추가
+        newOxButton.innerHTML = text.replace(/'(.*?)'/g, '<br><span style="color: #FF4B91;">$1</span>');
         return newOxButton;
     }
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayQuiz(index) {
         if (index < quizData.length) {
             const currentQuiz = quizData[index];
-            quizText.textContent = currentQuiz.quiz_text;
+            quizText.innerHTML = currentQuiz.quiz_text.replace(/'(.*?)'/g, '<br><span style="color: #FF4B91;">$1</span>');
             answer1.innerHTML = ''; // answer-1 초기화
             answer2.innerHTML = ''; // answer-2 초기화
 
@@ -90,8 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
             nextButton.textContent = 'Next'; // Change the text of the "다시하기" button back to "Next" when clicked
             displayQuiz(currentIndex);
         }
-        
-        
     });
 
     // quiz_data를 HTML에서 가져오기
