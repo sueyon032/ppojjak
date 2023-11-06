@@ -82,7 +82,16 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentIndex < quizData.length) {
             resetAnswerDivs(); // 퀴즈가 변경되면 정답 표시 초기화
             displayQuiz(currentIndex);
+            if (currentIndex === quizData.length - 1) {
+                nextButton.textContent = '다시하기'; // Change the text of the "Next" button to "다시하기" when all questions are displayed
+            }
+        } else if (currentIndex >= quizData.length) {
+            currentIndex = 0;
+            nextButton.textContent = 'Next'; // Change the text of the "다시하기" button back to "Next" when clicked
+            displayQuiz(currentIndex);
         }
+        
+        
     });
 
     // quiz_data를 HTML에서 가져오기
