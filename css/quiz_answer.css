@@ -1,0 +1,16 @@
+/* styles.css */
+.ox-button {
+    padding: 10px 20px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ox-button.correct {
+    background-color: green;
+}
+
+.ox-button.incorrect {
+    background-color: red;
+}
