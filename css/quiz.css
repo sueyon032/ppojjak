@@ -24,7 +24,7 @@ body{
     margin-left: 164px;
 }
 .quiz-text-question{
-    font-size: 80px;
+    font-size: 5.7rem;
 }
 .quiz-highlight{
     color: #FF4B91;
@@ -59,11 +59,11 @@ body{
     align-items: center;
 }
 
-.answer-1 > i {
-    font-size: 234px;
+.answer-1 > h1 {
+    font-size: 290px;
 }
 
-.answer-2 > i {
+.answer-2 > h1 {
     font-size: 290px;
 }
 
@@ -94,11 +94,11 @@ body{
         width: 500px;
         height: 254px;
     }
-    .answer-1 > i {
+    .answer-1 > h1 {
         font-size: 150px;
     }
     
-    .answer-2 > i {
+    .answer-2 > h1 {
         font-size: 180px;
     }
 
@@ -134,12 +134,18 @@ body{
         width: 333px;
         height: 232px;
     }
-    .answer-1 > i {
+    .answer-1 > h1 {
         font-size: 130px;
     }
     
-    .answer-2 > i {
+    .answer-2 > h1 {
         font-size: 160px;
     }
 }
 
+/* 삭제 예정 */
+#next-button {
+    position: absolute;
+    top: 20px; /* 위 여백 조절 가능 */
+    right: 20px; /* 오른쪽 여백 조절 가능 */
+}
