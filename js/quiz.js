@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function createOxButton(text) {
         // 새로운 h1 태그 생성
         const newOxButton = document.createElement('h1');
-        newOxButton.innerHTML = text.replace(/'(.*?)'/g, '<br><span style="color: #FF4B91;">$1</span>');
+        newOxButton.textContent = text.replace(/'(.*?)'/g, '<br><span style="color: #FF4B91;">$1</span>');
         return newOxButton;
     }
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     answer1.style.backgroundColor = '#FF7676'; // 오답인 경우 answer-1의 배경색을 #FF7676로 변경
                 }
-                resultMessage1.textContent = currentQuiz.Result; // 결과 메시지 설정
+                resultMessage1.innerHTML = currentQuiz.Result.replace(/\./g, '.<br>'); // 결과 메시지 설정
                 answer1.appendChild(resultMessage1); // 결과 메시지를 보여줌
                 resultMessage1.style.display = 'block'; // 결과 메시지를 표시
                 answer1.style.pointerEvents = 'none'; // answer-1을 클릭하지 못하게 함
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     answer2.style.backgroundColor = '#FF7676'; // 오답인 경우 answer-2의 배경색을 #FF7676로 변경
                 }
-                resultMessage2.textContent = currentQuiz.Result; // 결과 메시지 설정
+                resultMessage2.innerHTML = currentQuiz.Result.replace(/\./g, '.<br>'); // 결과 메시지 설정
                 answer2.appendChild(resultMessage2); // 결과 메시지를 보여줌
                 resultMessage2.style.display = 'block'; // 결과 메시지를 표시
                 answer2.style.pointerEvents = 'none'; // answer-2를 클릭하지 못하게 함

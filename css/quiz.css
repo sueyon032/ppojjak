@@ -67,6 +67,11 @@ body{
     font-size: 290px;
 }
 
+p {
+    padding: 10px; /* 패딩 값을 원하는 크기로 조정하세요 */
+}
+
+
 /* 태블릿 */
 @media screen and (max-width:720px){
     .title-quiz{
