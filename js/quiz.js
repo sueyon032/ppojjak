@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
             currentIndex = 0;
             nextButton.textContent = 'Next'; // Change the text of the "다시하기" button back to "Next" when clicked
             displayQuiz(currentIndex);
+            resetAnswerDivs();
+            enableAnswerDivs();
         }
     });
 
