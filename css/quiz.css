@@ -71,6 +71,15 @@ p {
     padding: 10px; /* 패딩 값을 원하는 크기로 조정하세요 */
 }
 
+/* 데스크탑 중간 사이즈 1 */
+@media screen and (max-width:1109px){
+    .quiz-text-question{
+        font-size: 2rem;
+    }
+    .answer {
+        gap: 100px; /* 가로 간격을 100px로 설정 */
+    }
+}
 
 /* 태블릿 */
 @media screen and (max-width:720px){
