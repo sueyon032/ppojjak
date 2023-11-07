@@ -37,7 +37,7 @@ html, body {
     margin-bottom: 20px;
 }
 
-.nav{
+.nav-list{
     display: none;
 }
 
@@ -71,6 +71,6 @@ html, body {
 
 @media screen and (max-width:540px) {
     .nav-list {
-        gap: 180px;
+        gap: 150px;
     }
 }
