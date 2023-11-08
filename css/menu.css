@@ -71,6 +71,13 @@ html, body {
 
 @media screen and (max-width:540px) {
     .nav-list {
-        gap: 150px;
+        gap: 100px;
+    }
+    .fixed-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffffff; /* 원하는 배경색으로 설정 */
+        z-index: 999; /* 다른 요소 위에 레이어를 만들어줍니다. */
     }
 }
